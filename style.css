@@ -1,0 +1,112 @@
+* {
+    background: #282a36;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f8f8f2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    padding-top: 15px;
+    margin-left: 15px;
+    width: 15%; 
+    filter: contrast(120%);
+}
+
+main {
+    display: flex;
+    flex-direction: row; /* Mantener la disposición horizontal de las secciones */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre las secciones */
+    padding: 50px;
+}
+
+.input-section, .output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    width: 70%; /* Ajuste del tamaño para que ocupe el 70% */
+}
+
+.output-section {
+    width: 30%; /* Ajuste del tamaño para que ocupe el 30% */
+}
+
+.text-area, .mensaje {
+    border: none;
+    color: #f8f8f2;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    resize: none; /* Deshabilitar el redimensionado */
+}
+
+.text-area {
+    width: 100%; /* El cuadro de texto de entrada ocupa el 100% del ancho disponible */
+    height: 350px; /* Aumenta la altura del cuadro de texto de entrada */
+    margin-bottom: 20px;
+}
+
+.mensaje {
+    width: 100%; /* El cuadro de texto de salida ocupa el 100% del ancho disponible */
+    height: 350px; /* Aumenta la altura del cuadro de texto de salida */
+    background-image: url("/assets/Muñeco.png");
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.botones, .boton-copiar-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.botonEncriptar, .botonDesencriptar, .boton-copiar {
+    border: none;
+    border-radius: 20px;
+    color: #282a36;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.botonEncriptar {
+    background-color: #542DE0;
+}
+
+.botonEncriptar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 121, 198, 0.3);
+}
+
+.botonDesencriptar {
+    background: #50fa7b;
+}
+
+.botonDesencriptar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(80, 250, 123, 0.3);
+}
+
+.boton-copiar {
+    background: #ffb86c;
+    width: 200px; /* Hacemos el botón de copiar más ancho */
+}
